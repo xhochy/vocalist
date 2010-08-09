@@ -1,3 +1,5 @@
+require 'yaml'
+
 module Vocalist
   # Class which resolves an artist to its nationality
   class Nationality
@@ -63,7 +65,7 @@ module Vocalist
     # Classify an artist by its tags on Last.fm.
     #
     # @param [Array<Scrobbler::Tag>] tags The artist's tags from Last.FM
-    # @return [Hash<String, Fixnum>] The country this artist may belong to
+    # @return [String] The country this artist may belong to
     def by_scrobbler_tags(tags)
       result = by_scrobbler_tags_ex(tags).to_a.each { |s| s.reverse! }.max
       result[1] unless result.nil?
