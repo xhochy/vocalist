@@ -107,7 +107,8 @@ Gem::Specification.new do |s|
      "lib/vocalist/nationality.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb",
-     "spec/vocalist_spec.rb"
+     "spec/vocalist_spec.rb",
+     "vocalist.gemspec"
   ]
   s.homepage = %q{http://github.com/xhochy/vocalist}
   s.rdoc_options = ["--charset=UTF-8"]
